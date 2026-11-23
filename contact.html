@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Designed by Sebastian Valentino @ IT4Trades in collaboration with KHC Group">
+  <title>Contact | IT4Trades</title>
+  <meta name="description" content="Start a conversation with IT4Trades about your business technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="IT4Trades home"></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get IT Help</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's Get Your IT <span>Working for You.</span></h1>
+      <p>Tell us a little about your business and the technology challenge you're facing. No need for technical language. Start with what is getting in the way.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Direct contact</span>
+        <h2>A simple way to start the conversation.</h2>
+        <p>Send a short message using the form, and you'll be guided to Sebastian's LinkedIn to continue.</p>
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <p>No verified company email or phone number is published yet.</p>
+          <a href="#" data-linkedin class="btn btn-primary">Message Sebastian on LinkedIn</a>
+        </div>
+        <p style="margin-top:1rem;font-size:0.9rem;color:var(--muted)">The founder's location is publicly associated with Crawley, England. This is not a public office address.</p>
+      </div>
+
+      <div class="card">
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+              <div class="field-error" id="name-error" aria-live="polite"></div>
+            </div>
+            <div>
+              <label for="business">Business Name</label>
+              <input id="business" name="business" type="text" autocomplete="organization">
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+              <div class="field-error" id="email-error" aria-live="polite"></div>
+            </div>
+            <div>
+              <label for="need">What Do You Need Help With?</label>
+              <select id="need" name="need" required>
+                <option value="">Please choose</option>
+                <option>Everyday IT problem</option>
+                <option>Microsoft 365</option>
+                <option>Devices &amp; Workplace Setup</option>
+                <option>Connectivity &amp; Practical IT</option>
+                <option>Security &amp; Data Protection</option>
+                <option>Technology Advice</option>
+                <option>Not sure yet</option>
+              </select>
+              <div class="field-error" id="need-error" aria-live="polite"></div>
+            </div>
+            <div>
+              <label for="message">Short Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <div class="field-error" id="message-error" aria-live="polite"></div>
+            </div>
+            <p style="font-size:0.9rem;color:var(--muted);margin:0">No verified company email is connected yet. After you submit, you will be guided to Sebastian's LinkedIn to continue the conversation. Nothing is stored by this form.</p>
+            <div><button type="submit" class="btn btn-primary">Talk to Sebastian</button></div>
+          </div>
+        </form>
+        <div class="form-status" id="form-status" tabindex="-1" hidden>
+          <h3>Thanks, your message is ready.</h3>
+          <p>Nothing has been sent from this page. Continue the conversation with Sebastian on LinkedIn.</p>
+          <a href="#" data-linkedin class="btn btn-primary">Continue on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo-card"><img src="images/logo.png" alt="IT4Trades"></a>
+        <p>Practical IT support and consultancy for tradespeople, sole traders and construction businesses. Technology without the jargon.</p>
+        <p class="footer-tagline">Building Your IT, Brick by Brick.</p>
+        <a href="contact.html" class="btn btn-primary">Talk to Sebastian</a>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul class="footer-list">
+          <li><a href="services.html">Everyday IT Support</a></li>
+          <li><a href="services.html">Microsoft 365 &amp; Business Tools</a></li>
+          <li><a href="services.html">Devices &amp; Workplace Setup</a></li>
+          <li><a href="services.html">Connectivity &amp; Practical IT</a></li>
+          <li><a href="services.html">Security &amp; Data Protection Basics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="footer-list">
+          <li><a data-linkedin href="#">Founder on LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IT4Trades. All rights reserved.</p>
+      <p class="footer-credit">Designed by Sebastian Valentino @ IT4Trades in collaboration with KHC Group</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
